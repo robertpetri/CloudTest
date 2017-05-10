@@ -1,8 +1,12 @@
 Commands:
 oc cluster up
 oc new-app .
+oc expose service/cloudtest
+oc scale --replicas=5 dc cloudtest
+oc start-build cloudtest
+
+
+
 oc rollout latest dc/cloudtest -n myproject
 
-
-while true; do sleep 1; curl http://cloudtest-myproject.127.0.0.1.nip.io; 
-oc start-build cloudtest
+while true; do sleep 1; curl http://cloudtest-myproject.127.0.0.1.nip.io; date +"   %r";echo -e " "; done
