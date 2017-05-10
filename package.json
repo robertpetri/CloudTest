@@ -1,0 +1,12 @@
+{
+  "name": "OC-Example",
+  "version": "0.0.1",
+  "description": "OC-Exmaple",
+    "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "4.10.2"
+  }
+}
