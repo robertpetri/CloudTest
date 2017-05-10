@@ -1,0 +1,8 @@
+Commands:
+oc cluster up
+oc new-app .
+oc rollout latest dc/cloudtest -n myproject
+
+
+while true; do sleep 1; curl http://cloudtest-myproject.127.0.0.1.nip.io; 
+oc start-build cloudtest
