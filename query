@@ -1,0 +1,6 @@
+SELECT
+    userid,
+    COUNT(*) AS "num_deltas"
+  FROM deltas
+  GROUP BY userid 
+  ORDER BY num_deltas desc;
