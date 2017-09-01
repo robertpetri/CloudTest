@@ -17,7 +17,7 @@ var ip = require("ip");
 // });
 
 app.get('/', function (req, res) {
-  res.send('Hello World! THOMAS      '+ip.address());
+  res.send('Hello World! KEVIN      '+ip.address());
 });
 // app.get('/test', function(req,res){
 // connection.query('SELECT 1', function (error, results, fields) {
