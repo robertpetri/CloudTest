@@ -17,16 +17,18 @@ var ip = require("ip");
 // });
 
 app.get('/', function (req, res) {
-  res.send('Hello World! KEVIN      '+ip.address());
+  res.send('Hello World! Robert      '+ip.address());
 });
 // app.get('/test', function(req,res){
 // connection.query('SELECT 1', function (error, results, fields) {
 //   if (error) throw error;
 //   else{
 //   	console.log("connected");
+//     res.send("Connected successfully");
 //   }
 //   // connected! 
 // });
+// console.log("HIT HERE");
 // });
 
 http.listen(8080, function(){
